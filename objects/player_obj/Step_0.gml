@@ -8,6 +8,8 @@ if state == "Moving" {
 	if (distance_to_object(crew_obj) < 120 and keyboard_check_pressed(ord("Z"))) {
 		state = "Interacting";
 		var _crew = instance_nearest(x,y,crew_obj);
+		
+		if _crew.state == "Moving" exit;
 	
 		//debugging
 		show_debug_message("Initiated talking with "+_crew.name)

@@ -11,6 +11,7 @@ if (global.DEBUG) {
 		var ind = j-i;
 		var crew = CREW[ind];
 		draw_text(32+200*j,32,crew.name);
+		draw_text(32+200*j,64,crew.sys[? "name"]);
 	}
 }
 
