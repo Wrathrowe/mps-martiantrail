@@ -18,8 +18,7 @@ if state == "Moving" {
 }
 
 else if state == "Interacting" {
-	if !instance_exists(crewMenu_obj) {
-		
+	if !instance_exists(p_menu) {
 		state = "Moving";
 	}
 }

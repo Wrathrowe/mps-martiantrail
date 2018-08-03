@@ -20,7 +20,7 @@ switch (index)
 	break;
 	
 	case 4:
-	crew_textbox_create(crew,"Good. I hate moving.");
+	moveText = "Good. I hate moving.";
 	break;
 }
 
