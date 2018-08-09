@@ -8,3 +8,7 @@ foregroundMap = layer_tilemap_get_id("Tiles_Doors");
 doorLayer = layer_get_name("Tiles_Doors");
 
 state = "Moving";
+
+zoom = 1;
+
+camera = instance_create(x,y,camera_obj);
