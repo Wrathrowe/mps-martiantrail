@@ -1,5 +1,5 @@
 
-var crew = instance_create_depth(x,y,depth,crew_obj);
+var crew = instance_create_layer(x,y,"Layer_Crew",crew_obj);
 
 with (crew) {
 	name = argument0;

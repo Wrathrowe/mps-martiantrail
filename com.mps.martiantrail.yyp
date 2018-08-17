@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "2379d6dc-e705-4fb0-93ff-b616a35b4672",
+            "Value": {
+                "id": "93e8ad4b-739e-4a7d-959f-e9d0c07e32a6",
+                "resourcePath": "tilesets\\module_tileset\\module_tileset.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "243e7ba9-e2fa-4a22-bf24-513644363dcb",
             "Value": {
                 "id": "a5be0a21-7a2d-454d-a059-f74716b33937",
@@ -332,6 +340,14 @@
                 "id": "41534231-2273-416a-8b58-12fcf85fe61d",
                 "resourcePath": "scripts\\ctb_add_font\\ctb_add_font.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2d81bbde-6575-4375-bb69-c858481298f1",
+            "Value": {
+                "id": "f7275fcc-810b-4525-914c-6501e2090d90",
+                "resourcePath": "sprites\\module_tile\\module_tile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1063,6 +1079,22 @@
             }
         },
         {
+            "Key": "95ae90c0-5975-414f-a55d-a2497657dadb",
+            "Value": {
+                "id": "5e720396-c4c7-47e4-8f72-7b80e9e08a83",
+                "resourcePath": "tilesets\\module_vert_tileset\\module_vert_tileset.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "9663f0e0-31d7-425c-9b42-8b20db2880e6",
+            "Value": {
+                "id": "87503350-5d4f-4665-82c6-14aadb5898df",
+                "resourcePath": "sprites\\module_vert_tile\\module_vert_tile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9e2affd3-8920-4630-a220-b49136cfdd2e",
             "Value": {
                 "id": "9a766a42-65ad-4dff-b1dc-fd2e2e9e23d2",
@@ -1076,6 +1108,14 @@
                 "id": "d4b04091-fed0-498c-91fe-57eda941e54b",
                 "resourcePath": "fonts\\f_other\\f_other.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "9f20f643-ca4f-48e9-8605-682047b03201",
+            "Value": {
+                "id": "7265f492-9b49-4a7d-8635-41c5117e07bb",
+                "resourcePath": "tilesets\\module_horiz_tileset_32\\module_horiz_tileset_32.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

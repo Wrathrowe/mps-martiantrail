@@ -8,4 +8,5 @@ with crewbox {
 }
 
 crewbox.crew = crew;
+crew.textbox = crewbox;
 return crewbox;

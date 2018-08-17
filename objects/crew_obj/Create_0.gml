@@ -9,3 +9,5 @@ pecProf = ds_map_create();
 pecProf[? "P"] = 0;
 pecProf[? "E"] = 0;
 pecProf[? "C"] = 0;
+
+textbox = noone;

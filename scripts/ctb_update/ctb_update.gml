@@ -19,7 +19,7 @@
 */
 if( !visible ) exit;
 
-var skip = keyboard_check_pressed( CTB_SkipKey );
+var skip = false;//keyboard_check_pressed( CTB_SkipKey );
 
 if( !pause ) {
 
