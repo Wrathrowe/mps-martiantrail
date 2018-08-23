@@ -24,3 +24,22 @@ if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp) != 0) or (tilemap_get_
 
 //Move Vert
 y += vsp
+
+if sign(hsp) != 0 {
+	if sign(hsp) == 1 {
+		spr_rot = 270;
+		image_yscale = 1;
+		image_xscale = 1;
+	} else { 
+		spr_rot = 90;
+		image_yscale = 1;
+		image_xscale = -1;
+	}
+} else if sign(vsp) != 0 {
+	if sign(vsp) == 1
+		spr_rot = 180;
+	else
+		spr_rot = 0;
+	}
+	
+	

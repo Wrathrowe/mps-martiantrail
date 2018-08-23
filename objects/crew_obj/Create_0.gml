@@ -11,3 +11,6 @@ pecProf[? "E"] = 0;
 pecProf[? "C"] = 0;
 
 textbox = noone;
+
+t = irandom_range(0,85);
+spr = crew_spr;

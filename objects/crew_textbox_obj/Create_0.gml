@@ -3,6 +3,8 @@
     all the below functions.
 */
 
+crew = noone;
+
 // Initialize the CTB engine
 ctb_init();
 

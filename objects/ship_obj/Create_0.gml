@@ -6,6 +6,8 @@ var Engines = mecs_init("Engines");
 var Comms = mecs_init("Comms");
 var Systems = mecs_init("Systems");
 
+//Call subsystems via the 'subs' ds map
+
 globalvar MECS;
 
 MECS = [Medbay,Engines,Comms,Systems]
@@ -14,11 +16,13 @@ MECS = [Medbay,Engines,Comms,Systems]
 CREW = [];
 
 //TODO - Position should be controlled by assignment to MECS
-sysPositions = [[360, 200],[342,860],[1564,200],[1560,870]]
+sysPositions = [[360, 100],[342,860],[1400,100],[1400,870]]
 
 for (var i=0; i<array_length_1d(MECS); i++) {
+	//Init Crew
 	CREW[i] = crew_init("Jenkins "+string(i+1), MECS[i]);
 	var pos = sysPositions[i];
 	CREW[i].x = pos[0];
 	CREW[i].y = pos[1];
+	
 }

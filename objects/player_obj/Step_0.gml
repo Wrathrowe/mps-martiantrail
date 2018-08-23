@@ -6,10 +6,10 @@ if state == "Moving" {
 	player_check_collision(collisionMap, 64);
 
 	if zoom < 1 {
-		zoom += .05;
+		zoom += .04;
 	}
 	
-	if (distance_to_object(crew_obj) < 120 and keyboard_check_pressed(ord("Z"))) {
+	if (distance_to_object(crew_obj) < 120 and keyboard_check_pressed(ord("Z")) and !instance_exists(crew_textbox_obj)) {
 		state = "Interacting";
 		var _crew = instance_nearest(x,y,crew_obj);
 		
@@ -23,9 +23,17 @@ if state == "Moving" {
 }
 
 else if state == "Interacting" {
+	spr_rot = 0;
+	var _crew = instance_nearest(x,y,crew_obj);
+	if _crew.y > y+8 {vsp = 8; player_check_collision(collisionMap, 64);}
+	else if _crew.y < y-8 {vsp = -8; player_check_collision(collisionMap, 64);}
+	
+	if abs(_crew.x-x) < sprite_width {hsp = 8; player_check_collision(collisionMap, 64);}
+	else if _crew.x-x < -1.5*sprite_width {hsp = -8; player_check_collision(collisionMap, 64);}
+	else if _crew.x-x > 1.5*sprite_width {hsp = 8; player_check_collision(collisionMap, 64);}
 	
 	if zoom > .5 {
-		zoom -= .05;
+		zoom -= .04;
 	}
 	
 	if !instance_exists(p_menu) {
