@@ -9,12 +9,13 @@ if state == "Moving" {
 		zoom += .04;
 	}
 	
-	if (distance_to_object(crew_obj) < 120 and keyboard_check_pressed(ord("Z")) and !instance_exists(crew_textbox_obj)) {
-		state = "Interacting";
+	if (distance_to_object(crew_obj) < 120 
+	and keyboard_check_pressed(ord("Z")) 
+	and !instance_exists(crew_textbox_obj)) {
 		var _crew = instance_nearest(x,y,crew_obj);
-		
 		if _crew.state == "Moving" exit;
-	
+		state = "Interacting";
+		
 		//debugging
 		show_debug_message("Initiated talking with "+_crew.name)
 		crew_menu_create(_crew);

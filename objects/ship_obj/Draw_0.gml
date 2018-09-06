@@ -15,11 +15,13 @@ for (var i = 0; i < array_length_1d(MECS); i++) {
 	var sys = MECS[i];
 	var subs = sys[? "subs"];
 	var ids = ["P","E","C"];
+	var colors = [c_lime,c_yellow,c_navy];
 	for (var z=0; z<3; z++) {
 		var sub = subs[? ids[z]];
-		var text = sub[? "name"];
-		show_debug_message(text);
-		draw_text(xx+(z+1)*100, yy, text);
+		if i<3 draw_set_color(colors[z]);
+		draw_text(xx+(z+1)*100, yy, sub[? "name"]);
+		draw_set_color(c_white);
+		draw_text(xx+(z+1)*100, yy+32, sub[? "damage"]);
 	}
 	
 	

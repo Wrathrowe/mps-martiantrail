@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if !instance_exists(eventGenerator_obj) instance_create(0,0,eventGenerator_obj);
+
 var Medbay = mecs_init("Medbay");
 var Engines = mecs_init("Engines");
 var Comms = mecs_init("Comms");
