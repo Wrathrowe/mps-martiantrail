@@ -3,10 +3,13 @@
 draw_self();
 draw_set_font(crew_font);
 
-var oscil = sin(t)*.25;
-t += .05; if t >= 360 {t=0;}
+if global.DEBUG {
+	draw_set_color(c_red);
+	draw_rectangle(bbox_left+hspeed,bbox_top,bbox_right+hspeed,bbox_bottom, true);
+	draw_set_color(c_white);
+}
 
-y += oscil;
+
 
 //draw_sprite_ext(spr,0,x,y+oscil,image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 

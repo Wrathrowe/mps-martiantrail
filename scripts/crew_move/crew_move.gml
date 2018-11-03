@@ -1,6 +1,12 @@
-var crew = argument0;
-var newSys = argument1;
-var moveText = "";
+var sys = argument0;
+var crew = argument1;
+
+crew.x = sys.x;
+crew.y = sys.y;
+
+
+
+/*
 
 if crew.sys[? "name"] == newSys {
 	moveText = "I'm already here, captain...";
@@ -80,3 +86,4 @@ with crew {
 }
 
 return moveText;
+*/

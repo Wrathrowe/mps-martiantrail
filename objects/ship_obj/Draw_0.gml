@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+/*
 for (var i = 0; i < array_length_1d(MECS); i++) {
 	if (global.DEBUG) {
 		var str = mecs_get_info(MECS[i]);
@@ -34,6 +34,7 @@ for (var i = 0; i < array_length_1d(MECS); i++) {
 		}
 	}
 }
+*/
 	
 
 	

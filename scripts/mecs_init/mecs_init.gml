@@ -1,16 +1,16 @@
-var system = ds_map_create();
-system[? "name"] = argument0;
-system[? "sid"] = string_char_at(argument0, 0);
+var system = instance_create_layer(argument0,argument1,"Instances_MECS",system_obj);
 
-var subsystems = ds_map_create();
-//subsystems[? "parent"] = self;
-subsystems[? "P"] = subsystem_create("Physical");
-subsystems[? "E"] = subsystem_create("Electrical");
-subsystems[? "C"] = subsystem_create("Computerized");
+with system {
+	name = argument2;
+	sid = string_char_at(argument2, 0);
+	
+	var system = instance_create_layer(argument0,argument1,"Instances_MECS",system_obj);
+	
+	p = instance_create_layer(argument0,argument1,"Instances_PECs",subsystem_obj);
+	e = instance_create_layer(argument0,argument1,"Instances_PECs",subsystem_obj);
+	c = instance_create_layer(argument0,argument1,"Instances_PECs",subsystem_obj);
 
-system[? "subs"] = subsystems;
+}
 
-var s = subsystems[? "P"];
-show_debug_message(s[? "name"]);
 
 return system;

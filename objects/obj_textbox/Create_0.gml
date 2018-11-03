@@ -3,7 +3,7 @@
 if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance_destroy(); exit; }
 
 //-----------Customise (FOR USER)
-interact_key		= ord("E");
+interact_key		= ord("Z");
 up_key				= vk_up;		//for dialogue choices
 down_key			= vk_down;		//for dialogue choices
 
@@ -25,7 +25,7 @@ choice_col			= c_yellow;
 select_col			= c_orange;
 name_col			= c_orange;
 
-name_font			= fnt_dialogue;
+name_font			= fnt_name;
 
 priority_snd_effect = 5;
 open_mouth_frame	= 1;	//You only need to change this if you are using animated sprites

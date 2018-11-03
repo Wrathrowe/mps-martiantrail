@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+event_inherited();
+
 hsp = 0;
 vsp = 0;
 t=0;
@@ -18,3 +21,10 @@ spr = player_float_spr;
 spr_rot = 0;
 spr_x = 1;
 spr_y = 1;
+
+//--------Dialogue Stuff
+reset_dialogue_defaults();
+myPortrait			= spr_char;
+myVoice				= snd_voice2;
+myFont				= fnt_dialogue;
+myName				= "Player";

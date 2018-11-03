@@ -7,7 +7,9 @@
         "7de9ba06-8942-435e-aa44-39e511046a2d",
         "1f37963f-ec6f-4aa3-a677-322455362a41",
         "c5541b3a-214e-4646-81ea-5a002455b30f",
-        "33137f5d-18fe-4b2e-93f6-29fcfb7dfa69"
+        "33137f5d-18fe-4b2e-93f6-29fcfb7dfa69",
+        "8817f023-a6f6-4aaf-bae1-a2f429677450",
+        "67f4511e-f920-46d3-91f0-743baff673e3"
     ],
     "filterType": "GMScript",
     "folderName": "crew",

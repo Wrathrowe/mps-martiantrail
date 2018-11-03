@@ -41,7 +41,7 @@ surface_set_target( SU );
 
     draw_set_alpha( 1 );
     draw_set_color( c_white );
-    draw_clear_alpha( c_black,0 );
+    draw_clear_alpha( c_black,1 );
     draw_set_blend_mode_ext( bm_one,bm_zero );
     
     draw_sprite( S,0,0,0 );                                 // Top left

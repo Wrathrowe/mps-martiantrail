@@ -55,6 +55,10 @@ switch(arg_count-1){
 
 //Change the Textbox Values
 with(_textbox){
+	
+	show_debug_message(_text);
+	show_debug_message(_nextline);
+	
 	creator		= _creator;
 	effects		= _effects;
 	text_speed	= _speed;
