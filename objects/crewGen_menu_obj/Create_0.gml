@@ -13,6 +13,7 @@ var pecLabels = ["P","E","C"];
 crewMenu = instance_create_layer(x-200,y-200,layer,ui_c_crewbox_horiz);
 crewSelected = CREW[0];
 
+
 //Widgets
 #region Horizontal Crew Selection Menu
 with (crewMenu) {
@@ -92,3 +93,4 @@ with (crewNameInput) {
 }
 
 #endregion
+	

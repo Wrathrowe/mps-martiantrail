@@ -6,7 +6,3 @@ if !instance_exists(obj_textbox) or (abs(x-player_obj.x) < 4 and abs(y-player_ob
 	instance_destroy();
 	exit;
 }
-
-with (player_obj) {
-	move_towards_point(other.x,other.y,4);
-}

@@ -8,7 +8,9 @@ if (InputText_obj.m_editing) exit;
 
 //Delete all menu items to free memory
 if (keyboard_check_pressed(vk_escape)) {
-	
+	if (instance_exists(obj_textbox)) {
+		instance_destroy(obj_textbox);
+	}
 	camera_obj.subject = player_obj;
 	with (ui_defaults) {
 		if uiAnchor == other.id {

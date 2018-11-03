@@ -3,6 +3,10 @@
 
 if camera_obj.subject != player_obj exit;
 
+if (instance_exists(moveto_obj)) {
+	move_towards_point(moveto_obj.x,moveto_obj.y,4);
+}
+
 if(!instance_exists(obj_textbox)) {
 	
 	player_set_dir(16);

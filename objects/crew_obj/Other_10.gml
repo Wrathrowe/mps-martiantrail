@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+myName = name;
+
 //Greeting
 myText[0] = crew_get_text("hello");
 myText[1] = ["Talk","Move","Done"];

@@ -46,10 +46,11 @@ portrait_idle_c = 0;
 emotes			= -1;
 speaker			= noone;
 
-boxHeight		= sprite_get_height(dialogue_box) * scale;
-boxWidth		= sprite_get_width(dialogue_box) * scale;
 gui_width		= display_get_gui_width();
 gui_height		= display_get_gui_height();
+boxHeight		= sprite_get_height(dialogue_box) * scale;
+boxWidth		= sprite_get_width(dialogue_box) * scale;
+
 gb_diff			= gui_width - boxWidth;
 portraitWidth	= sprite_get_width(portrait_frame) * scale;
 finishede_num	= sprite_get_number(finished_effect);
