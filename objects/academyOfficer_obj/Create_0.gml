@@ -5,5 +5,5 @@
 event_inherited();
 
 myPortrait = crew_spr;
-
+myName = "Academy Officer";
 type = "Human";

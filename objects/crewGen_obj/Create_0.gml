@@ -5,9 +5,5 @@
 event_inherited();
 
 myPortrait = crew_spr;
-myName = "Arco";
+myName = "Academy Assistant";
 type = "Human";
-
-first = true;
-
-objective_create(self, "Get briefed by the Requisitions Officer", c_red);
