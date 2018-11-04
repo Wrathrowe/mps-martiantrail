@@ -4,3 +4,9 @@ global.Medical = 0;
 global.Physical = 0;
 global.Electrical = 0;
 global.Computerized = 0;
+global.Objectives = [];
+
+
+//local
+objAlpha = 0;
+t = 0;

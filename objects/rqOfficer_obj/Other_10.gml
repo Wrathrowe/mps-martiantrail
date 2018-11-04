@@ -15,7 +15,12 @@ create_textevent(
 "Come talk to me if you need more information or help finding anything."
 ], -1);
 first = false;
-event_perform(ev_other, event_user(0));
+
+objective_remove(self);
+objective_create(shopkeep_obj, "Visit the shop to get supplies", c_yellow);
+objective_create(academyOfficer_obj, "Visit the Academy Officer and assemble your crew", c_aqua);
+
+//event_perform(ev_other, event_user(0));
 }
 
 //Greeting
