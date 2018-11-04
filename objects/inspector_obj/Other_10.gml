@@ -4,21 +4,17 @@
 // Inherit the parent event
 event_inherited();
 
-var ready = true;
-var readyText = "You're ready to depart!";
-for (var i=0; i<array_length_1d(CREW); i++) {
-	if (CREW[i].name == "" or crew_get_total_pecs(CREW[i]) < 2) {
-		ready = false;
-		readyText = "Your crew isn't ready... See the Academy Officer below us.";
-	}
-}
+var ready = crew_check_if_ready();
+var readyText = "";
 
 if (!ready) {
+	readyText = "Your crew isn't ready... See the Academy Officer below us.";
 	myText[0] = readyText;
 	myNextLine[0] = -1;
 }
 
 if (ready) {
+	readyText = "You're ready to depart!";
 	myText[0] = readyText;
 	myNextLine[0] = 1;
 	myText[1] = "Shall we commence takeoff?";
