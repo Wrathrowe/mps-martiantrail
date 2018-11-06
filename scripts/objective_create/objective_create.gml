@@ -12,5 +12,7 @@ obj.objective = argument0;
 obj.text = argument1;
 obj.color = argument2;
 
+gameController_obj.objAlpha = 5;
+
 return obj;
 

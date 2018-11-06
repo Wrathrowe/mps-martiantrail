@@ -4,7 +4,7 @@
 
 #region Objective GUI
 
-if (!instance_exists(obj_textbox) and instance_exists(objective_obj)) {
+if (instance_exists(objective_obj)) {
 
 	draw_set_color(c_black);
 	draw_set_font(fnt_dialogue);
@@ -12,7 +12,7 @@ if (!instance_exists(obj_textbox) and instance_exists(objective_obj)) {
 	//Fade objective GUI in/out
 	//t creates a delay before fading out
 	if keyboard_check(vk_tab) or t == 30 { 
-		objAlpha += .1;
+		objAlpha = 3;
 		t = 30;
 	} 
 
@@ -23,7 +23,7 @@ if (!instance_exists(obj_textbox) and instance_exists(objective_obj)) {
 	if objAlpha >= 1
 		t--;
 
-	objAlpha = clamp(objAlpha, 0, 1);
+	
 	t = clamp(t, 0, 60);
 
 	draw_set_alpha(objAlpha);
