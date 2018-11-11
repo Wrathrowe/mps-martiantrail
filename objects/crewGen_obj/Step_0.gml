@@ -7,3 +7,6 @@ if (instance_exists(crewGen_menu_obj)) {
 // Inherit the parent event
 event_inherited();
 
+if instance_exists(myTextbox) {
+	myTextbox.deleteType = "Hard";
+}

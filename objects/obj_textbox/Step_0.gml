@@ -19,7 +19,9 @@ if(type[page] == 0){
 			}
 			event_perform(ev_alarm, 0);
 			
-		} else { event_perform(ev_other, ev_user0); instance_destroy(); }
+		} else if deleteType != "Hard" { 
+			event_perform(ev_other, ev_user0); instance_destroy();
+		}
 	}
 } 
 #endregion

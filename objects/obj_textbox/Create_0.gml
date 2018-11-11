@@ -1,5 +1,7 @@
 /// @description
 
+deleteType = "Soft";
+
 if(instance_number(obj_textevent)>1 or instance_number(obj_textbox)>1){ instance_destroy(); exit; }
 
 //-----------Customise (FOR USER)

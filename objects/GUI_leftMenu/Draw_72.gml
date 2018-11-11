@@ -2,6 +2,8 @@
 // You can write your code in this editor
 event_inherited();
 
+draw_set_valign(fa_top);
+
 var cam = view_get_camera(0);
 cam_x = camera_get_view_x(cam);
 cam_y = camera_get_view_y(cam);

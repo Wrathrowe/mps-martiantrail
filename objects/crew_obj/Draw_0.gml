@@ -18,7 +18,7 @@ if global.DEBUG {
 var nameWidth = string_width(name);
 
 var alph = 1;
-alph = distance_to_object(player_obj) > 150 ? 0 : 50/distance_to_object(player_obj);
+alph = distance_to_object(player_obj) > 150 or instance_exists(obj_textbox) ? 0 : 50/distance_to_object(player_obj);
 
 draw_set_alpha(alph);
 

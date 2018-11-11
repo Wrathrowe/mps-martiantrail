@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+player_obj.zoom = 1;
+
 var cam = view_get_camera(0);
 cam_x = camera_get_view_x(cam);
 cam_y = camera_get_view_y(cam);

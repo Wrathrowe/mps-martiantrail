@@ -42,7 +42,7 @@ switch (other.uiControlName) {
 	case "x_test_event":
 		//Creates a random pop-up from the hard-coded data in the event controller object
 		
-		var event = x_eve_get("MEETINGS","Space Pirates!");
+		var event = x_eve_get_random("MEETINGS");
 		
 		show_debug_message("Event out: "+string(event));
 		//TODO: Add more events and trigger them from an in-game action
@@ -53,6 +53,7 @@ switch (other.uiControlName) {
 			
 		with (player_obj) {
 			create_dialogue(EVENT_TEXT, -1);
+			myTextbox.deleteType = "Hard";
 		}
 		
 		show_debug_message("EVENT ACTIONS type: "+typeof(EVENT_ACTIONS));

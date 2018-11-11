@@ -1,5 +1,6 @@
 //Draw textbox
 draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
+draw_set_valign(fa_top);
 
 //Draw portrait
 if(portrait[page] != -1){
@@ -243,6 +244,7 @@ else {
 	}
 	#endregion
 	
+	/*
 	#region Draw "Finished" effect
 	if(charCount >= str_len){
 		var shift = sin((t+cc)*pi*freq/room_speed)*amplitude;
@@ -251,5 +253,6 @@ else {
 		draw_sprite(finished_effect, finishede_count, finishede_x + shift, finishede_y);
 	}
 	#endregion
+	*/
 }
 #endregion
