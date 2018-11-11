@@ -3,10 +3,10 @@
 event_inherited();
 
 var cam = view_get_camera(0);
-var cam_x = camera_get_view_x(cam);
-var cam_y = camera_get_view_y(cam);
-xx = display_get_width();
-yy = display_get_height();
+cam_x = camera_get_view_x(cam);
+cam_y = camera_get_view_y(cam);
+xx = window_get_width();
+yy = window_get_height();
 
 y = cam_y;
 x = cam_x+40+ease_out_back(lb_easing[? "time"],lb_easing[? "start"],lb_easing[? "dest"]-lb_easing[? "start"],lb_easing[? "duration"]);

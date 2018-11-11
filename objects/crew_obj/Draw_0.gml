@@ -16,22 +16,22 @@ if global.DEBUG {
 
 //Draw name
 var nameWidth = string_width(name);
-if textbox == noone {
-	draw_set_halign(fa_left);
-	draw_set_color(c_black);
-	draw_rectangle(x-nameWidth/2-4,y-10,x+nameWidth/2+4,y-40,false);
-	draw_set_color(c_white);
-	draw_rectangle(x-nameWidth/2-4,y-10,x+nameWidth/2+4,y-40,true);
-	draw_set_halign(fa_center);
-	draw_text(x,y-25, name);
-} else {
-	draw_set_color(c_black);
-	draw_rectangle(textbox.x,textbox.y,textbox.x+80,textbox.y-32,false);
-	draw_set_color(c_white);
-	draw_rectangle(textbox.x,textbox.y,textbox.x+80,textbox.y-32,true);
-	draw_set_halign(fa_left);
-	draw_text(textbox.x+6,textbox.y-20,name);	
-}
+
+var alph = 1;
+alph = distance_to_object(player_obj) > 150 ? 0 : 50/distance_to_object(player_obj);
+
+draw_set_alpha(alph);
+
+draw_set_halign(fa_left);
+draw_set_color(c_black);
+draw_rectangle(x-nameWidth/2-4,y-10,x+nameWidth/2+4,y-40,false);
+draw_set_color(c_white);
+//draw_rectangle(x-nameWidth/2-4,y-10,x+nameWidth/2+4,y-40,true);
+draw_set_halign(fa_center);
+draw_text(x,y-32, name);
+
+//reset
+draw_set_alpha(1);
 draw_set_halign(fa_left);
 
 //Draw specialty

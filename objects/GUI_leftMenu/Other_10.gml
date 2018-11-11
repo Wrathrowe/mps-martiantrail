@@ -18,9 +18,11 @@ switch (other.uiControlName) {
 	break;
 	
 	case "x_quit": {
-		quitDiag = instance_create_layer(room_width/2 ,room_height/2, GUI.GUI_FRONT, ui_dialog);
+		quitDiag = instance_create_layer(cam_x,cam_y, layer, ui_dialog);
 		with quitDiag {
-			//x_gui_confirm_popup("Quit Game", "#Are you sure you want to quit?", GUI, "x_quit_game");
+			x_gui_confirm_popup("Quit Game", "Are you sure you want to quit?", gameController_obj, "x_quit_game");
+			uiDialogPosX = other.cam_x+other.xx/4;
+			uiDialogPosY = other.cam_y+other.yy/4;
 		}
 	}
 	break;
