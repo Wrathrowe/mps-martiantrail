@@ -3,6 +3,8 @@
 // Set the textbox's background
 event_inherited();
 
+instance_create_layer(0,0,layer,GUI_alertbox);
+
 xx = window_get_width();
 yy = window_get_height();
 
@@ -44,6 +46,7 @@ with lm_button[? "Lock Menu"] {
 	uiEventObject = other;
 	uiControlName = "x_lock_menu";
 	class = ".bottom";
+	persistent = true;
 }
 #endregion
 
@@ -55,19 +58,20 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 	
 	if ds_map_exists(lm_button, label) continue;
 	
-	lm_button[? label] = instance_create_layer(x+sprite_width/8,y+sprite_height-sprite_height*.15*(i+1),layer,ui_button_ani);
+	lm_button[? label] = instance_create_layer(x+8,y+sprite_height-sprite_height*.15*(i+1),layer,ui_button_ani);
 
 	with (lm_button[? label]) {
 		uiAnchor = other;
 		var textLabel = string_replace(label," ","#")
 		uiTextValue = textLabel;
-		//uiSetWidth = other.sprite_width*.75;
-		//uiSetHeight = other.sprite_height*.1;
+		uiSetWidth = 80;
+		uiSetHeight = 80;
 		btn_index = i;
 		uiEventObject = other;
 		
 		var controlLabel = "x_"+string_lower(string_replace(label," ","_"));
 		uiControlName = controlLabel;
+		persistent = true;
 	}
 }
 

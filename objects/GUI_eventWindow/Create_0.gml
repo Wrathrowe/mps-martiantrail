@@ -4,15 +4,22 @@
 // Inherit the parent event
 event_inherited();
 
-sprPanel = ctb_load_subimage(spr_textbox_slice9_subimages, room_width*1/2, room_height*3/4);
+xx = window_get_width();
+yy = window_get_height();
+
+var cam = view_get_camera(0);
+cam_x = camera_get_view_x(cam);
+cam_y = camera_get_view_y(cam);
+
+sprPanel = ctb_load_subimage(spr_textbox_slice9_subimages, xx*1/2, yy*2/4);
 uiPanelSprite = sprPanel;
 sprite_index = sprPanel;
 showMenu = false;
 
 #region Easing
 easing = ds_map_create();
-easing[? "start"] = room_width*3/2;
-easing[? "dest"] = room_width*1/4;
+easing[? "start"] = xx*3/2;
+easing[? "dest"] = xx*1/8;
 easing[? "duration"] = 60;
 easing[? "time"] = 0;
 #endregion

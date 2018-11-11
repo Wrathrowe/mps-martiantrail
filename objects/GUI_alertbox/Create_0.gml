@@ -4,8 +4,13 @@
 */
 alarm_set(0,240);
 #region Textbox Area & Easing
-xx = camera_get_view_width(view_camera[0]);
-yy = camera_get_view_height(view_camera[0]);
+
+var cam = view_get_camera(0);
+var cam_x = camera_get_view_x(cam);
+var cam_y = camera_get_view_y(cam);
+
+xx = window_get_width();
+yy = window_get_height();
 
 alertboxArea = [xx-300,0,xx,60];
 ab_easing = ds_map_create();

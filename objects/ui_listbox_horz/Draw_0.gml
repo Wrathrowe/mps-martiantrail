@@ -87,7 +87,8 @@ for (fx=0;fx<numitems;fx+=1)    //go through each item in the list;
      else if ((cury)<=visible_ybot) //if we are below bottom  and above top...we draw to surface....                      
                {          
                 if uiAutoSelect {if (cury > autoPos) && (itemindex==-1) itemindex=fx};
-                disptx=items[fx];        
+                disptx=items[fx];
+				
                 while (string_width(string_hash_to_newline(disptx+"X")) * uiXscale) > (uiItemWidth)   //clip strings if they are too long
                       { 
                          disptx=string_delete(disptx,string_length(disptx),1);
@@ -140,7 +141,7 @@ for (fx=0;fx<numitems;fx+=1)    //go through each item in the list;
                 py=0;
                 if uiAlignV==fa_top { py=5; } 
                  else if uiAlignV==fa_middle {py=(sprite_height div 2); }
-                   else if uiAlignV==fa_bottom {py = sprite_height-string_height(string_hash_to_newline("Xypg")); } 
+                   else if uiAlignV==fa_bottom {py = sprite_height-string_height(string_hash_to_newline(disptx)); } 
 
                    
               

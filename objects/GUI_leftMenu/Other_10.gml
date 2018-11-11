@@ -36,11 +36,11 @@ switch (other.uiControlName) {
 			easing[? "time"] = 0;
 		}
 	break;
-	/*
+	
 	case "x_test_event":
 		//Creates a random pop-up from the hard-coded data in the event controller object
 		
-		var event = x_eve_get_random("MEETINGS");
+		var event = x_eve_get("MEETINGS","Space Pirates!");
 		
 		show_debug_message("Event out: "+string(event));
 		//TODO: Add more events and trigger them from an in-game action
@@ -48,13 +48,14 @@ switch (other.uiControlName) {
 		EVENT_NAME = event[? "name"];
 		EVENT_ACTIONS = event[? "actions"];
 		EVENT_TEXT = event[? "text"];
-				
-		//x_gui_update_textbox(EVENT_TEXT, true);
-
+			
+		with (player_obj) {
+			create_dialogue(EVENT_TEXT, -1);
+		}
 		
 		show_debug_message("EVENT ACTIONS type: "+typeof(EVENT_ACTIONS));
 		
-		instance_create_layer(room_width,64,GUI.GUI_MID,GUI_eventWindow);
+		instance_create_layer(xx*3/4,64,layer,GUI_eventWindow);
 		with (GUI_eventWindow) {
 			if !showMenu {showMenu = true;} else continue;
 			event_user(3);
@@ -62,7 +63,7 @@ switch (other.uiControlName) {
 			
 		}
 	break;
-	*/
+	
 	case "x_pause":
 		PAUSED = !PAUSED;
 		var alerttext = !PAUSED ? "Unpause" : "Pause";

@@ -19,7 +19,7 @@ for (var i=0; i<array_length_1d(MECS); i++) {
 	//Init Crew
 	//if (gameController_obj.Crew[i] != "None") {
 	
-		CREW[i] = crew_init("Jenkins "+string(i+1), MECS[i]);
+		CREW[i] = crew_init(x_generate_name("M","Full"), MECS[i]);
 		CREW[i].x = MECS[i].x+100;
 		CREW[i].y = MECS[i].y+100;
 	//}

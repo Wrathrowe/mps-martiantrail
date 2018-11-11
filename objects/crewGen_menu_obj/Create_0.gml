@@ -10,7 +10,7 @@ sprite_set_offset(mySprite,sprite_get_width(mySprite)/2,sprite_get_height(mySpri
 
 //Global Widget Vars
 var pecLabels = ["P","E","C"];
-crewMenu = instance_create_layer(x-200,y-200,layer,ui_c_crewbox_horiz);
+crewMenu = instance_create_layer(x-300,y-200,layer,ui_c_crewbox_horiz);
 crewSelected = CREW[0];
 
 
@@ -26,7 +26,9 @@ with (crewMenu) {
 	sprites = [];
 	
 	for (var i=0; i<array_length_1d(CREW); i++) {
-		items[i] = CREW[i].name;
+		var nameStr = CREW[i].name;
+		nameStr = string_replace(nameStr," ","#");
+		items[i] = nameStr; 
 		sprites[i] = CREW[i].sprite_index;
 	}
 	
@@ -86,7 +88,7 @@ for (var i = 0; i<array_length_1d(pecLabels); i++) {
 #endregion
 #region Crew Name Input Box
 
-crewNameInput = instance_create_layer(x+150,y-200,layer,InputText_obj);
+crewNameInput = instance_create_layer(x+50,y-175,layer,InputText_obj);
 
 with (crewNameInput) {
 	uiAnchor = other;

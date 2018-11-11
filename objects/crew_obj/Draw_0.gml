@@ -15,14 +15,15 @@ if global.DEBUG {
 
 
 //Draw name
+var nameWidth = string_width(name);
 if textbox == noone {
 	draw_set_halign(fa_left);
 	draw_set_color(c_black);
-	draw_rectangle(x-40,y-10,x+40,y-40,false);
+	draw_rectangle(x-nameWidth/2-4,y-10,x+nameWidth/2+4,y-40,false);
 	draw_set_color(c_white);
-	draw_rectangle(x-40,y-10,x+40,y-40,true);
+	draw_rectangle(x-nameWidth/2-4,y-10,x+nameWidth/2+4,y-40,true);
 	draw_set_halign(fa_center);
-	draw_text(x,y-30, name);
+	draw_text(x,y-25, name);
 } else {
 	draw_set_color(c_black);
 	draw_rectangle(textbox.x,textbox.y,textbox.x+80,textbox.y-32,false);

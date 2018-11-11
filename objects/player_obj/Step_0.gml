@@ -25,4 +25,8 @@ else {
 }
 
 zoom = clamp(zoom, .5, 1);
+
+//debugging
+zoom = 1;
+
 camera_set_view_size(view_camera[0], (view_wport[0]*.75)*zoom, (view_hport[0]*.75)*zoom);

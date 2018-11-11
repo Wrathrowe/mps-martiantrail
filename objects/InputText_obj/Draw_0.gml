@@ -4,7 +4,7 @@ draw_set_font(font_ui);
 draw_set_color(c_yellow);
 draw_set_blend_mode(bm_normal);
 draw_set_halign(fa_center);
-draw_text(x+sprite_width/2, y+60, m_editing ? string_hash_to_newline("Del - Cancel#Enter - Done") : "Enter - Rename");
+draw_text(x+sprite_width/2, y+60, m_editing ? string_hash_to_newline("Del - Cancel#Enter - Done#R - Random Name") : "Enter - Rename");
 draw_set_halign(fa_center);
 
 #region Textfield + textfield logic
@@ -22,8 +22,12 @@ draw_set_font(fnt_dialogue);
 
 if(m_editing) {
 	
-	if (string_length(keyboard_string) > 12) {
-		keyboard_string = string_copy(keyboard_string, 0, 12);
+	if (string_length(keyboard_string) > 18) {
+		keyboard_string = string_copy(keyboard_string, 0, 18);
+	}
+	
+	if (keyboard_check_pressed(ord("R"))) {
+		keyboard_string = x_generate_name("M","Full");
 	}
 	
 	txt = keyboard_string;
