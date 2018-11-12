@@ -4,7 +4,7 @@
 event_inherited();
 
 //Greeting
-myText[0] = "How may I assist you?";
+myText[0] = "Hello, Captain. If you're looking to assemble a crew, you should speak with my assistant behind me. Is there anything else I can help you with?";
 
 myText[1] = ["About Crew", "About PEC Proficencies", "I'll be going"];
 myNextLine[1] = [2,4,-1];

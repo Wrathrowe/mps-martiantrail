@@ -4,8 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-var ready = crew_check_if_ready();
-
-if ready {
+if crew_check_if_ready() {
 	objective_remove(academyOfficer_obj);
 }

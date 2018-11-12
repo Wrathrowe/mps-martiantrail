@@ -7,11 +7,12 @@ event_inherited();
 type = "None";
 state = "None";
 size = 0;
+myName = "Pile";
 
 worth = [0,10,30,50];
 amount = [0,10,30,50];
 
-sizeText = ["Non-Existant", "small", "medium", "large"];
+sizeText = ["Non-Existent", "small", "medium", "large"];
 sizeColor = [c_white, c_aqua, c_lime, c_red];
 
 mySpeaker = shopkeep_obj;

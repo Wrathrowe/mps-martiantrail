@@ -3,32 +3,17 @@
 
 event_inherited();
 
-if (first) {
-	//create_textevent(
-	myText = [
-	"Welcome, Captian. I'm the Arcadia Corp. Requisitions Officer.",
-	"You can call me Arco.",
-	"We've recieved a distress signal from the Martian colony.",
-	"Arcadia High Command has tasked me with assisting you in preparing for the journey.",
-	"In order to depart, you will need a crew, a ship, and supplies.",
-	"While the specifics of each are up to you, I'd be happy to assist however I can.",
-	"Come talk to me if you need more information or help finding anything."
-	]
-	//, rqOfficer_obj);
-
-	objective_remove(self);
-	objective_create(shopkeep_obj, "Visit the shop to get supplies", c_yellow);
-	objective_create(academyOfficer_obj, "Visit the Academy Officer and assemble your crew", c_aqua);
-
-	//event_perform(ev_other, event_user(0));
-	first = false;
-	exit;
-}
-
 if (!first) {
 	//Greeting
 	myText[0] = "How may I assist you?";
-
+} else {
+	first = false;
+	myText[0] = "Welcome, Captian. I'm the Arcadia Corp. Requisitions Officer. We've recieved a distress signal from the Martian colony. Arcadia High Command has tasked me with assisting you in preparing for the journey. While exactly how you prepare is up to you, I'd be happy to assist the process however I can."
+	
+	objective_remove(self);
+	objective_create(shopkeep_obj, "Get PEC Components and Medical Supplies", c_yellow);
+	objective_create(academyOfficer_obj, "Visit the Academy Officer and assemble your crew", c_aqua);
+}
 	myText[1] = ["Where can I find...","Martian Colony","Done"];
 	myNextLine[1] = [2,7,-1];
 
@@ -37,13 +22,13 @@ if (!first) {
 	myNextLine[2] = [3,4,5,6];
 
 	//Ship
-	myText[3] = "I'd recommend visiting the Academy to find crew interested in the mission.";
+	myText[3] = "I'd recommend visiting the Academy to find crew interested in the mission. It can be found south-east of here.";
 	myNextLine[3] = 2;
 
-	myText[4] = "Your ship can be found in the shipyard. We've taken the liberty of preparing it for you.";
+	myText[4] = "Your ship can be found in the shipyard. We've taken the liberty of preparing it for you. Once you have supplies and a crew, you'll be cleared for launch.";
 	myNextLine[4] = 2;
 
-	myText[5] = "Supplies can be purchased at the shop. You can find it on the second floor.";
+	myText[5] = "Supplies can be requisitioned here. You can find Medical Supplies behind me, and PEC Components on the floor above with the Shopkeep. If you have questions about PEC Components, he can answer them for you.";
 	myNextLine[5] = 2;
 
 	myText[6] = "Very well. Is there anything else I can assist you with?";
@@ -59,4 +44,3 @@ if (!first) {
 
 
 	myTypes = [0,1,1,0,0,0,0,0,0,0];
-}

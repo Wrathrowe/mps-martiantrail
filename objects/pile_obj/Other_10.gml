@@ -14,10 +14,10 @@ if (type != "None" and size > 0) {
 	
 	myText[2] = "Would you like to buy it?";
 	myText[3] = ["Yes","No"];
+	myScripts[3] = [[components_add, string_char_at(type,1), amount[size]], [control_cancel] ]
 	myNextLine[3] = [4,-1];
 	
 	myText[4] = "You purchased the " + sizeText[size] + " pile of " + type + " Components."
-	
 	
 	myTypes = [0,0,0,1];
 

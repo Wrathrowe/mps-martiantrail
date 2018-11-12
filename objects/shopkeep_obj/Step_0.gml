@@ -4,9 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-//myPortrait = crew_spr;
-type = "Human";
-
-//local
-takeoff = false;
-checked = false;
+if (inv_check_supplies_ready()) {
+	objective_remove(shopkeep_obj);
+}
