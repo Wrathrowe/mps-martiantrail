@@ -8,36 +8,39 @@ with other.uiAnchor {
 	easing[? "duration"] = 60;
 	easing[? "time"] = 0;
 }
+
+if (instance_exists(obj_textevent)) {
 	
-if (instance_exists(obj_textbox)) {
-	with (obj_textbox) {
+	with (obj_textevent) {
+		with (myTextbox) {instance_destroy();}
 		instance_destroy();
 	}
 }
-	
+
+
 switch (other.uiControlName) {
 	
 	case "Fight": case "Attack":
-	with (player_obj) create_dialogue("Battle Initiated!", -1);
+	create_textevent(["Battle Initiated!"], [ai_obj]);
 	break;
 	
 	case "Run":
-	with (player_obj) create_dialogue("Got away safely!", -1);
+	create_textevent(["Got away safely!"], [ai_obj]);
 	break;
 	
 	case "Talk":
-	with (player_obj) create_dialogue("Talk Initiated.", -1);
+	create_textevent(["Talk Initiated."], [ai_obj]);
 	break;
 	
 	case "Ignore": 
-	with (player_obj) create_dialogue("How Rude!", -1);
+	create_textevent(["How Rude!"], [ai_obj]);
 	break;
 	
 	case "OK":
-	with (player_obj) create_dialogue("Job Done.", -1);
+	create_textevent(["Job Done."], [ai_obj]);
 	break;
 	
 	case "Investigate":
-	with (player_obj) create_dialogue("That's when they started the investigation.", -1);
+	create_textevent(["That's when they started the investigation."], [ai_obj]);
 	break;
 }

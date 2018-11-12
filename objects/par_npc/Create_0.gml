@@ -9,3 +9,4 @@ state = "Floating";
 center = sprite_height/2;
 type = "None";
 myName = x_generate_name("M","Full");
+myPortrait = spr_char;

@@ -50,11 +50,18 @@ switch (other.uiControlName) {
 		EVENT_NAME = event[? "name"];
 		EVENT_ACTIONS = event[? "actions"];
 		EVENT_TEXT = event[? "text"];
-			
-		with (player_obj) {
-			create_dialogue(EVENT_TEXT, -1);
-			myTextbox.deleteType = "Hard";
+		
+		if instance_exists(obj_textbox) {
+			with (obj_textbox) {
+				instance_destroy();
+			}
 		}
+		
+
+		show_debug_message("STARTING EVENT DIALOG IN AI");
+		create_textevent([EVENT_TEXT], [ai_obj]);
+		obj_textevent.myTextbox.deleteType = "Hard";
+
 		
 		show_debug_message("EVENT ACTIONS type: "+typeof(EVENT_ACTIONS));
 		
@@ -65,6 +72,7 @@ switch (other.uiControlName) {
 			x_gui_update_alertbox("Event triggered!");
 			
 		}
+		
 	break;
 	
 	case "x_pause":

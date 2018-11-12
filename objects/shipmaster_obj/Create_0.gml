@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-myPortrait = crew_spr;
+//myPortrait = crew_spr;
 
 type = "Human";

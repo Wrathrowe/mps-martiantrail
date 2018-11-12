@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "432da100-25e2-4524-888f-acbf739f58f1",
+            "Value": {
+                "id": "0f82e567-68e6-4cfd-a879-cbb450738269",
+                "resourcePath": "sprites\\ai_spr\\ai_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "449ec99a-93e7-4fca-a372-fe19c4105c99",
             "Value": {
                 "id": "bcc5ffa5-3fe4-46f1-924e-3364203f7331",
@@ -1111,6 +1119,14 @@
             }
         },
         {
+            "Key": "5485838e-671f-4ea9-8d2a-fbffd5dcaae1",
+            "Value": {
+                "id": "8f040a32-c8a6-4d1d-aab6-9b00c3539a84",
+                "resourcePath": "sprites\\ai_portrait_spr\\ai_portrait_spr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "54b30065-92e0-4641-8b89-3cb114e79367",
             "Value": {
                 "id": "5aaf8a83-5677-4012-94e9-edacd7a9f383",
@@ -1155,6 +1171,14 @@
             "Value": {
                 "id": "01c99f55-5a84-4d38-976e-f598d67ad0e0",
                 "resourcePath": "objects\\ui_dialog\\ui_dialog.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "57a9ba44-0b39-41ac-a778-3ccb400e3216",
+            "Value": {
+                "id": "38caa908-2721-46a2-96f8-ef87115ebe1d",
+                "resourcePath": "objects\\ai_obj\\ai_obj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2759,14 +2783,6 @@
             }
         },
         {
-            "Key": "cd9e7e0a-bd51-49a6-b091-0450e0943447",
-            "Value": {
-                "id": "90314d68-059b-4b81-8efd-1b801f999ec0",
-                "resourcePath": "sprites\\sprite50\\sprite50.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "ce42980c-2fb0-44d7-868f-246f89e4f507",
             "Value": {
                 "id": "bf23e19a-771f-4f56-be8a-ea74a4dde433",
@@ -3243,6 +3259,14 @@
             "Value": {
                 "id": "a544fa43-b97d-4e92-9a59-c9e903bc4b02",
                 "resourcePath": "sprites\\spr_ico_continue_small\\spr_ico_continue_small.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fd2f8908-d13b-497a-94d1-2015c18e4e87",
+            "Value": {
+                "id": "a2df50d1-619b-48d5-a109-ffa4520c9cea",
+                "resourcePath": "sprites\\ai_talk_spr\\ai_talk_spr.yy",
                 "resourceType": "GMSprite"
             }
         },

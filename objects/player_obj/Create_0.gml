@@ -8,8 +8,6 @@ vsp = 0;
 t=0;
 
 collisionMap = layer_tilemap_get_id("Tiles_Collision");
-foregroundMap = layer_tilemap_get_id("Tiles_Doors");
-doorLayer = layer_get_name("Tiles_Doors");
 
 state = "Moving";
 
