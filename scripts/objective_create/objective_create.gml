@@ -14,5 +14,8 @@ obj.color = argument2;
 
 gameController_obj.objAlpha = 5;
 
+//if instance_exists(GUI_alertbox)
+	x_gui_update_alertbox("Objectives Updated");
+
 return obj;
 

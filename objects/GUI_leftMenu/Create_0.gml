@@ -4,6 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-myPortrait = crew_spr;
-myName = "Friendly Shopkeep";
-type = "Human";
+instance_create_layer(0,0,layer,GUI_alertbox);

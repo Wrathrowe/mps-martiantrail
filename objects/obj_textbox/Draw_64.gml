@@ -1,6 +1,7 @@
 //Draw textbox
-draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
 draw_set_valign(fa_top);
+draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
+
 
 //Draw portrait
 if(portrait[page] != -1){

@@ -3,8 +3,6 @@
 // Set the textbox's background
 event_inherited();
 
-instance_create_layer(0,0,layer,GUI_alertbox);
-
 xx = window_get_width();
 yy = window_get_height();
 
@@ -46,7 +44,6 @@ with lm_button[? "Lock Menu"] {
 	uiEventObject = other;
 	uiControlName = "x_lock_menu";
 	class = ".bottom";
-	persistent = true;
 }
 #endregion
 
@@ -71,7 +68,6 @@ for (var i=0; i < array_length_1d(btnLabels); i++) {
 		
 		var controlLabel = "x_"+string_lower(string_replace(label," ","_"));
 		uiControlName = controlLabel;
-		persistent = true;
 	}
 }
 

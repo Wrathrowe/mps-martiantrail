@@ -12,7 +12,7 @@ var cam_y = camera_get_view_y(cam);
 xx = window_get_width();
 yy = window_get_height();
 
-alertboxArea = [xx-300,0,xx,60];
+alertboxArea = [cam_x+xx-300,0,cam_x+xx,60];
 ab_easing = ds_map_create();
 #endregion
 
@@ -37,8 +37,8 @@ ctb_add_color( "yellow", c_yellow );
 ctb_add_color( "red", c_red );
 
 // Add some fonts
-ctb_add_font( "default", fnt_dialogue );
-ctb_add_font( "normal", fnt_dialogue );
+ctb_add_font( "default", Arial );
+ctb_add_font( "normal", Arial );
 ctb_add_font( "other", f_other );
 
 // Add a sound

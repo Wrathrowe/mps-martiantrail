@@ -437,12 +437,19 @@ if(tempN2>199){
 if(argument[1]=="Last"){
 	return(LName[tempN2]);
 }
+
+//get random sex
+if (argument[0] == "R") {
+	var sex = ["M","F"];
+	argument[0] = sex[irandom_range(0,1)];
+}
+
 if(argument[0]=="F"){
 	if(argument[1]=="Full"){
-		return(string(MName[tempN1]+" "+LName[tempN2]));
+		return(string(FName[tempN1]+" "+LName[tempN2]));
 	}
 	if(argument[1]=="First"){
-		return(MName[tempN1]);
+		return(FName[tempN1]);
 	}
 }
 
