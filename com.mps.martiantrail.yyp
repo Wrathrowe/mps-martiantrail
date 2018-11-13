@@ -1751,6 +1751,14 @@
             }
         },
         {
+            "Key": "7b5d2959-ba7e-493e-9dbe-4924a0a4eb0b",
+            "Value": {
+                "id": "ed6a4db0-5ffe-448d-9b4d-44f9e9add717",
+                "resourcePath": "fonts\\f_lukas\\f_lukas.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "7c22c345-399d-419d-af0e-1522e44bef73",
             "Value": {
                 "id": "2edb51fe-45f8-4c46-b676-7f0faacad534",
