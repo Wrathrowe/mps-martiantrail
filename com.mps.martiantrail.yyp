@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "028d77c6-2c69-4d10-bff0-04cc154f0733",
-            "Value": {
-                "id": "04d9a963-ebf2-400e-ad57-bf1015ca4457",
-                "resourcePath": "views\\028d77c6-2c69-4d10-bff0-04cc154f0733.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "02a93034-8f6e-4718-a90d-ef3a3edfc5ae",
             "Value": {
                 "id": "018468c6-3f73-4843-b280-348b5b432ef4",
@@ -299,6 +291,14 @@
             "Value": {
                 "id": "67358a6c-755f-453a-ad89-42999a3f29f9",
                 "resourcePath": "views\\18941358-322b-4312-9248-7c749f98cf42.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "18f7fa9f-a6de-4d74-a03a-5acc2d429b5b",
+            "Value": {
+                "id": "ac8694a5-b2a2-4f4b-9200-24c76bac2e2c",
+                "resourcePath": "views\\18f7fa9f-a6de-4d74-a03a-5acc2d429b5b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1060,6 +1060,14 @@
                 "id": "e58c3ca9-0f44-4e47-b353-d47a21387f3e",
                 "resourcePath": "views\\4dea3f99-4e80-42d5-b9d1-b45c36e982ef.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4dfbc7dd-1076-4e7d-8da3-3bac4e427cea",
+            "Value": {
+                "id": "6268b480-3515-438c-a48e-5b58a06a6fd6",
+                "resourcePath": "fonts\\f_castellotto\\f_castellotto.yy",
+                "resourceType": "GMFont"
             }
         },
         {
