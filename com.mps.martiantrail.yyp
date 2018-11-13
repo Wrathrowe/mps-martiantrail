@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "4dfbc7dd-1076-4e7d-8da3-3bac4e427cea",
+            "Value": {
+                "id": "6268b480-3515-438c-a48e-5b58a06a6fd6",
+                "resourcePath": "fonts\\f_castellotto\\f_castellotto.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "4e66a275-1e7d-40e2-99e7-d7fd90bef5d3",
             "Value": {
                 "id": "2453e43c-664f-4dbb-8c4e-a371fae97f4e",
