@@ -34,7 +34,7 @@ for (var i = 0; i < array_length_1d(btnList); i++) {
 	with btnList[i] uiMouseHandle = !inMotion;	
 }
 
-if !inMotion and x > xx {
+if !inMotion and x > room_width {
 	with ui_defaults {
 		if (uiAnchor == other)
 			instance_destroy();	
