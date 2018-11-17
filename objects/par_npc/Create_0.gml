@@ -10,3 +10,5 @@ center = sprite_height/2;
 type = "None";
 myName = x_generate_name("M","Full");
 myPortrait = spr_char;
+myPortraitIdle = spr_char;
+myPortraitTalk = spr_char_talking;

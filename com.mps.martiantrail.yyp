@@ -3207,6 +3207,14 @@
             }
         },
         {
+            "Key": "f1d001ec-e9c5-4ffb-ac7d-4261f36901da",
+            "Value": {
+                "id": "1e2730cc-5f88-4c05-a87a-63196df30bb3",
+                "resourcePath": "sprites\\spr_char_talking\\spr_char_talking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f3207a20-db76-4993-839a-2ca992e4d17d",
             "Value": {
                 "id": "43c67a9f-103f-42bc-ae74-2f3b89362bc7",

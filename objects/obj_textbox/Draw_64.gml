@@ -5,15 +5,16 @@ draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
 //Draw portrait
 if(portrait[page] != -1){
 	
-	var sDiff = (sprite_get_height(portrait_frame)-sprite_get_height(dialogue_box))*scale;
+	var sDiff = (sprite_get_height(portrait_frame)-sprite_get_height(dialogue_box));
 	
 	
-	draw_sprite_ext(portrait[page], emotion[page], pos_x-portraitWidth, pos_y-sDiff, scale,scale, 0, c_white, 1);
+	draw_sprite_ext(portrait[page], emotion[page], pos_x-portraitWidth, pos_y-sDiff*scale, scale,scale, 0, c_white, 1);
 
 	#region Idle Animated Portrait
+	
 if(type[page] == 1 or charCount >= str_len) {
 	if(portrait_idle[page] != -1){
-		var posx = pos_x-portraitWidth; var posy = pos_y;
+		var posx = pos_x-portraitWidth; var posy = pos_y-sDiff*scale;
 		if(portrait_idle_x[page] != -1){ posx += portrait_idle_x[page] * scale; }
 		if(portrait_idle_y[page] != -1){ posy += portrait_idle_y[page] * scale; }
 		
@@ -22,9 +23,10 @@ if(type[page] == 1 or charCount >= str_len) {
 		draw_sprite_ext(portrait_idle[page], portrait_idle_c, posx, posy, scale,scale, 0, c_white, 1);	
 	}
 }
+
 #endregion
 
-	draw_sprite_ext(portrait_frame, 0, pos_x-portraitWidth, pos_y-sDiff, scale,scale, 0, c_white, 1);
+	draw_sprite_ext(portrait_frame, 0, pos_x-portraitWidth, pos_y-sDiff*scale, scale,scale, 0, c_white, 1);
 }
 
 #region Draw name and namebox
@@ -112,7 +114,7 @@ else {
 				#region Animated Sprite
 				if(portrait_talk[page] != -1) {
 					if(!pause) {
-						var posx = pos_x-portraitWidth; var posy = pos_y;
+						var posx = pos_x-portraitWidth; var posy = pos_y - sDiff*scale;
 						if(portrait_talk_x[page] != -1){ posx += portrait_talk_x[page] * scale; }
 						if(portrait_talk_y[page] != -1){ posy += portrait_talk_y[page] * scale; }
 		

@@ -8,7 +8,7 @@ if (!first) {
 	myText[0] = "How may I assist you?";
 } else {
 	first = false;
-	myText[0] = "Welcome, Captian. I'm the Arcadia Corp. Requisitions Officer. We've recieved a distress signal from the Martian colony. Arcadia High Command has tasked me with assisting you in preparing for the journey. While exactly how you prepare is up to you, I'd be happy to assist the process however I can."
+	myText[0] = "Welcome, Captain. I'm the Arcadia Corp. Requisitions Officer. We've recieved a distress signal from the Martian colony. Arcadia High Command has tasked me with assisting you in preparing for the journey. While exactly how you prepare is up to you, I'd be happy to assist the process however I can."
 	
 	objective_remove(self);
 	objective_create(shopkeep_obj, "Get PEC Components and Medical Supplies", c_yellow);
