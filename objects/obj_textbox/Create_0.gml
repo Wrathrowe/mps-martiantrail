@@ -62,10 +62,10 @@ finishede_spd	= (sprite_get_speed(spr_dialoguefinished)/room_speed);
 pos_x			= (gb_diff/2)+(portraitWidth/2);
 pos_y			= gui_height-boxHeight-8;
 
-name_box_x		= pos_x + (8 * scale);
-name_box_y		= pos_y - (23 * scale);
+name_box_x		= pos_x //+ (8 * scale);
+name_box_y		= pos_y - (sprite_get_height(name_box) * scale);
 name_box_text_x = name_box_x + ((sprite_get_width(name_box)*scale)/2);
-name_box_text_y = name_box_y + y_buffer;
+name_box_text_y = name_box_y + (sprite_get_height(name_box)*scale-font_get_size(fnt_dialogue))/2//+ y_buffer;
 
 finishede_x		= pos_x + boxWidth - x_buffer;
 finishede_y		= pos_y + boxHeight - y_buffer;

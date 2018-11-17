@@ -9,7 +9,7 @@ for (var i = 0; i < instance_number(objective_obj); i += 1) {
 	if o.objective == argument[0] {
 		
 
-		if (instance_exists(argument[1])) {
+		if (argument_count > 1 and instance_exists(argument[1])) {
 			x_gui_update_alertbox("Objective Complete!");
 			audio_play_sound(snd_moveselect,1,false);
 			instance_destroy(argument[1]);

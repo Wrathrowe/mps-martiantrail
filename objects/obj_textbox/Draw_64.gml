@@ -2,10 +2,13 @@
 draw_set_valign(fa_top);
 draw_sprite_ext(dialogue_box, 0, pos_x,pos_y, scale,scale, 0, c_white, 1);
 
-
 //Draw portrait
 if(portrait[page] != -1){
-	draw_sprite_ext(portrait[page], emotion[page], pos_x-portraitWidth, pos_y, scale,scale, 0, c_white, 1);
+	
+	var sDiff = (sprite_get_height(portrait_frame)-sprite_get_height(dialogue_box))*scale;
+	
+	
+	draw_sprite_ext(portrait[page], emotion[page], pos_x-portraitWidth, pos_y-sDiff, scale,scale, 0, c_white, 1);
 
 	#region Idle Animated Portrait
 if(type[page] == 1 or charCount >= str_len) {
@@ -21,7 +24,7 @@ if(type[page] == 1 or charCount >= str_len) {
 }
 #endregion
 
-	draw_sprite_ext(portrait_frame, 0, pos_x-portraitWidth, pos_y, scale,scale, 0, c_white, 1);
+	draw_sprite_ext(portrait_frame, 0, pos_x-portraitWidth, pos_y-sDiff, scale,scale, 0, c_white, 1);
 }
 
 #region Draw name and namebox

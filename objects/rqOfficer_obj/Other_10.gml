@@ -21,19 +21,23 @@ if (!first) {
 	myText[2] = ["Crew","Ship","Supplies","Nevermind"];
 	myNextLine[2] = [3,4,5,6];
 
-	//Ship
+	//Crew
 	myText[3] = "I'd recommend visiting the Academy to find crew interested in the mission. It can be found south-east of here.";
 	myNextLine[3] = 2;
 
+	//Ship
 	myText[4] = "Your ship can be found in the shipyard. We've taken the liberty of preparing it for you. Once you have supplies and a crew, you'll be cleared for launch.";
 	myNextLine[4] = 2;
 
+	//Supplies
 	myText[5] = "Supplies can be requisitioned here. You can find Medical Supplies behind me, and PEC Components on the floor above with the Shopkeep. If you have questions about PEC Components, he can answer them for you.";
 	myNextLine[5] = 2;
 
+	//Nevermind
 	myText[6] = "Very well. Is there anything else I can assist you with?";
 	myNextLine[6] = 1;
-
+	
+	//Martian Colony
 	myText[7] = "We don't know much about why it went dark. The last official word from the colony was nothing but good news.";
 	myText[8] = "The colony is a shining example of Arcadian superiority. If anything were to happen to it...";
 	myText[9] = "I'd rather not focus on that right now. Let's focus on getting you spaceborn so we can put an end to all this baseless speculation.";
