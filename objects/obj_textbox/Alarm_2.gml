@@ -28,5 +28,6 @@ if(page+1 < array_length_1d(text)){
 }
 
 chosen = false;
+choice = 0;
 
 #endregion

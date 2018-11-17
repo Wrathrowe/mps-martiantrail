@@ -5,7 +5,7 @@
 event_inherited();
 
 //myPortrait = crew_spr;
-myName = "Arco";
+myName = "Req. Officer";
 type = "Human";
 
 first = true;
