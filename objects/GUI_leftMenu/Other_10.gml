@@ -59,8 +59,8 @@ switch (other.uiControlName) {
 		
 
 		show_debug_message("STARTING EVENT DIALOG IN AI");
-		create_textevent([EVENT_TEXT], [ai_obj]);
-		obj_textevent.myTextbox.deleteType = "Hard";
+		create_dialogue([EVENT_TEXT], [ai_obj]);
+		obj_textbox.deleteType = "Hard";
 
 		
 		show_debug_message("EVENT ACTIONS type: "+typeof(EVENT_ACTIONS));

@@ -55,14 +55,6 @@
             }
         },
         {
-            "Key": "028d77c6-2c69-4d10-bff0-04cc154f0733",
-            "Value": {
-                "id": "04d9a963-ebf2-400e-ad57-bf1015ca4457",
-                "resourcePath": "views\\028d77c6-2c69-4d10-bff0-04cc154f0733.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "02a93034-8f6e-4718-a90d-ef3a3edfc5ae",
             "Value": {
                 "id": "018468c6-3f73-4843-b280-348b5b432ef4",
@@ -299,6 +291,14 @@
             "Value": {
                 "id": "67358a6c-755f-453a-ad89-42999a3f29f9",
                 "resourcePath": "views\\18941358-322b-4312-9248-7c749f98cf42.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "18f7fa9f-a6de-4d74-a03a-5acc2d429b5b",
+            "Value": {
+                "id": "ac8694a5-b2a2-4f4b-9200-24c76bac2e2c",
+                "resourcePath": "views\\18f7fa9f-a6de-4d74-a03a-5acc2d429b5b.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "4dfbc7dd-1076-4e7d-8da3-3bac4e427cea",
+            "Value": {
+                "id": "6268b480-3515-438c-a48e-5b58a06a6fd6",
+                "resourcePath": "fonts\\f_castellotto\\f_castellotto.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "4e66a275-1e7d-40e2-99e7-d7fd90bef5d3",
             "Value": {
                 "id": "2453e43c-664f-4dbb-8c4e-a371fae97f4e",
@@ -1748,6 +1756,14 @@
                 "id": "73ba6f44-7083-441b-955e-94486f4a3990",
                 "resourcePath": "scripts\\@__background_set\\__background_set.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7b5d2959-ba7e-493e-9dbe-4924a0a4eb0b",
+            "Value": {
+                "id": "ed6a4db0-5ffe-448d-9b4d-44f9e9add717",
+                "resourcePath": "fonts\\f_lukas\\f_lukas.yy",
+                "resourceType": "GMFont"
             }
         },
         {
