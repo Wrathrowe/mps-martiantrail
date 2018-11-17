@@ -33,9 +33,11 @@ if (instance_exists(objective_obj)) {
 
 	for (var i = 0; i < instance_number(objective_obj); i += 1) {
 		global.Objectives[i] = instance_find(objective_obj,i);
+		if(!global.Objectives[i].show) {
+			continue;
+		}
 		draw_set_color(global.Objectives[i].color);
 		draw_text(20, 20 + (string_height(global.Objectives[i].text)*i), global.Objectives[i].text);
-	
 	}
 }
 #endregion

@@ -2,6 +2,10 @@
 
 #region TYPE 0: NORMAL
 if(type[page] == 0){
+	
+	//check if last page
+	endOfText = !(page+1 < array_length_1d(text))
+	
 	if(keyboard_check_pressed(interact_key)){
 
 		//If we haven't "typed out" all the letters, immediately "type out" all letters (works as a "skip")
