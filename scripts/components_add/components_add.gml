@@ -15,6 +15,9 @@ switch (argument0) {
 	case "M":
         global.Medical += argument1;
         break;
+	case "CRED":
+        global.Credits += argument1;
+        break;
     default:
         // code here
         break;

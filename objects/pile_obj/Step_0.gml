@@ -4,3 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
+if (transaction) {
+	create_textevent("You purchased the " + sizeText[size] + " pile of " + type + " Components.", -1);
+	transaction = false;
+}

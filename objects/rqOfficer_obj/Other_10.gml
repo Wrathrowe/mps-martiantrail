@@ -13,6 +13,7 @@ if (!first) {
 	objective_remove(self);
 	objective_create(shopkeep_obj, "Get PEC Components and Medical Supplies", c_yellow);
 	objective_create(academyOfficer_obj, "Visit the Academy Officer and assemble your crew", c_aqua);
+	components_add("CRED", 300);
 }
 	myText[1] = ["Where can I find...","Martian Colony","Done"];
 	myNextLine[1] = [2,7,-1];

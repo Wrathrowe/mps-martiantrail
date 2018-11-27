@@ -4,6 +4,7 @@ global.Medical = 0;
 global.Physical = 0;
 global.Electrical = 0;
 global.Computerized = 0;
+global.Credits = 0;
 global.Objectives = [];
 global.Time = 0;
 

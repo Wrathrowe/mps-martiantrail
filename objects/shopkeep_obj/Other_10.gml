@@ -7,8 +7,8 @@ event_inherited();
 myText[0] = "Welcome to my fine establishment!";
 
 //mySpeaker[1] = player_obj;
-myText[1] = ["View Stock", "Learn about components", "Leave"];
-myNextLine[1] = [2, 3, -1];
+myText[1] = ["View Stock", "Learn about components", "Packages", "Leave"];
+myNextLine[1] = [2, 3, 10, -1];
 
 //mySpeaker[2] = self;
 myText[2] = "You will find an assortment of items in this room. Interact with any of them and I will tell you the type, size, and cost.";
@@ -39,7 +39,61 @@ myText[9] = "They're generally referred to as PEC Components.";
 
 myNextLine[9] = 4;
 
-myText[10] = "";
+myText[10] = "You can either purchase your supplies manually, or choose from a selection of pre-made packages. Which package would you like to learn more about?";
+//Athlete: Physical and Medical | Doctor: Medical * 2
+//Engineer: Electrical and Computerized | Beginner: Even Everything
+myText[11] = ["Athlete","Doctor","Engineer","Beginner","Nevermind"];
+myNextLine[11] = [12,14,16,18,1];
 
+#region Packages
 
-myTypes = [0,1,0,0,1,0,0,0,0,0,0,0];
+//ATHLETE
+myText[12] = "The 'Athlete' package contains the following components:"+
+" 100 Physical, 50 Electrical, 50 Computerized, 100 Medical." +
+" Would you like to buy it?";
+myText[13] = ["Yes", "No"];
+myScripts[13] = [
+	[components_add_from_package, 100, 50, 50, 100],
+	[control_cancel]
+];
+myNextLine[13] = [20, 11];
+
+//DOCTOR
+myText[14] = "The 'Doctor' package contains the following components:"+
+" 50 Physical, 50 Electrical, 50 Computerized, 150 Medical." +
+" Would you like to buy it?";
+myText[15] = ["Yes", "No"];
+myScripts[15] = [
+	[components_add_from_package, 50, 50, 50, 150],
+	[control_cancel]
+];
+myNextLine[15] = [20, 11];
+
+//ENGINEER
+myText[16] = "The 'Engineer' package contains the following components:"+
+" 50 Physical, 100 Electrical, 100 Computerized, 50 Medical." +
+" Would you like to buy it?";
+myText[17] = ["Yes", "No"];
+myScripts[17] = [
+	[components_add_from_package, 50, 100, 100, 50],
+	[control_cancel]
+];
+myNextLine[17] = [20, 11];
+
+//BEGINNER
+myText[18] = "The 'Beginner' package contains the following components:"+
+" 75 Physical, 75 Electrical, 75 Computerized, 75 Medical." +
+" Would you like to buy it?";
+myText[19] = ["Yes", "No"];
+myScripts[19] = [
+	[components_add_from_package, 75, 75, 75, 75],
+	[control_cancel]
+];
+myNextLine[19] = [20, 11];
+
+myText[20] = "Good choice! Once you have your crew configured, you'll be ready to go.";
+
+#endregion
+
+myTypes = [0,1,0,0,1,0,0,0,0,0,0,
+		1,0,1,0,1,0,1,0,1,0];

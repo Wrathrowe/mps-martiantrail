@@ -21,3 +21,4 @@ myPortrait = shopkeep_obj.myPortrait;
 center = -60;
 
 detection_radius = sprite_width;
+transaction = false;
