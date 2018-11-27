@@ -727,6 +727,22 @@
             }
         },
         {
+            "Key": "33634c94-b392-4387-9e8a-14a6330a1256",
+            "Value": {
+                "id": "7e2224d6-ee7b-4cdd-9ff8-455996953bff",
+                "resourcePath": "objects\\obj_gmlive\\obj_gmlive.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "34ebc914-3fea-42f7-a6b9-db18b75cd055",
+            "Value": {
+                "id": "ac44e120-88eb-4513-b7cb-83424dcf9228",
+                "resourcePath": "extensions\\GMLive\\GMLive.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "3617c53b-fbad-41c1-b107-7ab92fa8aaca",
             "Value": {
                 "id": "50dd6400-6c7a-4a16-a8e3-326958e681f9",
@@ -1100,6 +1116,14 @@
                 "id": "eb08798b-5ee4-4e13-8029-6e7734c4b695",
                 "resourcePath": "scripts\\x_gui_minimize_alertbox\\x_gui_minimize_alertbox.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5095252a-6b6c-45ab-8cef-e1eae0c76be0",
+            "Value": {
+                "id": "ec766d8b-e3d2-484a-b1f0-33ca33508692",
+                "resourcePath": "datafiles_yy\\gmlive-server.n.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1791,6 +1815,14 @@
             }
         },
         {
+            "Key": "7cc1f0a8-11ee-4917-ac99-e074a42abb9b",
+            "Value": {
+                "id": "80db1c43-953d-40cf-9698-af2305ef2227",
+                "resourcePath": "datafiles_yy\\std.ndll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "7d30af96-9489-4999-8601-eefc3fda6c32",
             "Value": {
                 "id": "a2487a6d-4bbf-4cf3-84e3-fa446b28c031",
@@ -2119,6 +2151,14 @@
             }
         },
         {
+            "Key": "9e16ed44-0184-4706-b260-7ce68a753a02",
+            "Value": {
+                "id": "34fc2661-05f9-4e33-b2c8-efe02acc411c",
+                "resourcePath": "datafiles_yy\\gc.dll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "9e1c0aca-7d02-4e5f-881e-77411d789c77",
             "Value": {
                 "id": "bc2a8587-36d1-4dc2-bd58-4a6635d16151",
@@ -2252,6 +2292,14 @@
                 "id": "a3f7ee5e-b04b-491e-b066-666381463073",
                 "resourcePath": "sprites\\spr_scaler\\spr_scaler.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a44c577b-8a4c-4902-95e8-69eb8624ad0c",
+            "Value": {
+                "id": "0bb9744d-a14a-4033-bfe1-9083d320af44",
+                "resourcePath": "datafiles_yy\\gmlive-server.exe.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -2460,6 +2508,14 @@
                 "id": "5e912441-bfea-4b27-b46a-2cb88191f048",
                 "resourcePath": "scripts\\x_eve_get\\x_eve_get.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b3fde75d-a153-4593-8399-f4f768536c10",
+            "Value": {
+                "id": "028af9a3-7097-44a7-b216-913e1c785ef7",
+                "resourcePath": "datafiles_yy\\gmlive.html.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -3340,6 +3396,22 @@
                 "id": "94a54a5c-24e0-4204-bae1-d9e667a23033",
                 "resourcePath": "scripts\\@__background_get_element\\__background_get_element.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ff409621-eab6-45ac-8977-39c501c747f9",
+            "Value": {
+                "id": "b82f665d-2f18-47bd-949c-0421a6df2fb7",
+                "resourcePath": "datafiles_yy\\regexp.ndll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "ffa26b33-d296-4571-8667-e2157c7e6406",
+            "Value": {
+                "id": "0a236c77-3da1-4eb3-baf1-b7d0e0f71fce",
+                "resourcePath": "datafiles_yy\\neko.dll.yy",
+                "resourceType": "GMIncludedFile"
             }
         }
     ],
