@@ -53,5 +53,16 @@
     "packageID": "com.gatod.easymenusystem",
     "productID": "31AF8E5D63524A933AE00FEE6CE52ED6",
     "sourcedir": "",
+    "tvosProps": false,
+    "tvosSystemFrameworkEntries": [
+        
+    ],
+    "tvosThirdPartyFrameworkEntries": [
+        
+    ],
+    "tvosclassname": null,
+    "tvosmaccompilerflags": null,
+    "tvosmaclinkerflags": null,
+    "tvosplistinject": null,
     "version": "1.0.0"
 }

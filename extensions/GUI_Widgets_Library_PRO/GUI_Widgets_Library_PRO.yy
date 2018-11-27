@@ -76,5 +76,16 @@
     "packageID": "com.nailbuster.widgetlibrarypro",
     "productID": "F79C97955FD1AF4686EB4EF4EF90F0DB",
     "sourcedir": "",
+    "tvosProps": false,
+    "tvosSystemFrameworkEntries": [
+        
+    ],
+    "tvosThirdPartyFrameworkEntries": [
+        
+    ],
+    "tvosclassname": null,
+    "tvosmaccompilerflags": null,
+    "tvosmaclinkerflags": null,
+    "tvosplistinject": null,
     "version": "1.5.1"
 }
