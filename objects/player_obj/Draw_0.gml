@@ -11,3 +11,4 @@ if instance_exists(obj_textbox) {
 
 draw_sprite_ext(spr,0,x,y+oscil,image_xscale, image_yscale, spr_rot, image_blend, image_alpha);
 
+image_angle = spr_rot;
