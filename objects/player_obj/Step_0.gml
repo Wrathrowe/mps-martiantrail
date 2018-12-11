@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (live_call()) return live_result;
+
 if camera_obj.subject != player_obj exit;
 
 if (instance_exists(moveto_obj)) {
@@ -10,7 +12,9 @@ if (instance_exists(moveto_obj)) {
 if(!instance_exists(obj_textbox)) {
 	
 	player_set_dir(16);
-	player_check_collision(collisionMap, 50);
+	x+=hsp;
+	y+=vsp;
+	//player_check_collision(collisionMap, 50);
 	//camera.subject = object_index;
 	
 	if zoom < 1 {

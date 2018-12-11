@@ -26,4 +26,6 @@ for (var i=0; i<array_length_1d(MECS); i++) {
 	
 }
 
-room_goto_next();
+if room_exists(mother_room) {
+	room_goto_live(mother_room);
+}

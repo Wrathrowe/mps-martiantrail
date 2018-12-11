@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (live_call()) return live_result;
+
 if global.DEBUG {draw_self();}
 
 var oscil = sin(t)*3;

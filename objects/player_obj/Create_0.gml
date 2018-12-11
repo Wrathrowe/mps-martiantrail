@@ -3,6 +3,8 @@
 
 event_inherited();
 
+room_set_live(room, true);
+
 hsp = 0;
 vsp = 0;
 t=0;
