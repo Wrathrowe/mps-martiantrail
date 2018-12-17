@@ -13,6 +13,6 @@ if (!variable_global_exists("g_live_log_script")) live_preinit();
 live_init(1, "http://localhost:5100", "");
 
 //Live room
-live_blank_object = obj_blank;
-live_blank_room = room_blank;
+//live_blank_object = obj_blank;
+//live_blank_room = room_blank;
 //live_room_updated = room_goto_live(mother_room);

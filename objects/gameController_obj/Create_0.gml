@@ -8,6 +8,7 @@ global.Credits = 0;
 global.Objectives = [];
 global.Time = 0;
 
+EVENT_TRIGGER = irandom_range(60*2, 60*5);
 
 //local
 objAlpha = 0;

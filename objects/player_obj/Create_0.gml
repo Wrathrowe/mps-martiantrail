@@ -3,8 +3,8 @@
 
 event_inherited();
 
-room_set_live(room, true);
-
+//room_set_live(room, true);
+collider = noone;
 hsp = 0;
 vsp = 0;
 t=0;

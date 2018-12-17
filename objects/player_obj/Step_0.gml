@@ -6,23 +6,21 @@ if (live_call()) return live_result;
 if camera_obj.subject != player_obj exit;
 
 if (instance_exists(moveto_obj)) {
-	move_towards_point(moveto_obj.x,moveto_obj.y,4);
+	//move_towards_point(moveto_obj.x,moveto_obj.y,4);
 }
 
 if(!instance_exists(obj_textbox)) {
 	
-	player_set_dir(16);
-	x+=hsp;
-	y+=vsp;
-	//player_check_collision(collisionMap, 50);
-	//camera.subject = object_index;
-	
+	player_set_dir(8);
+
 	if zoom < 1 {
 		zoom += .02;
 	}
 }
 
 else {
+	speed = 0;
+	collider = noone;
 	if zoom > .5 {
 		zoom -= .02;
 	}

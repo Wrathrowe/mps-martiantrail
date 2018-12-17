@@ -48,8 +48,8 @@ if (room == ship_room) {
 	draw_set_color(c_black);
 	draw_rectangle(400,10,600,40,false);
 	draw_set_color(c_white);
-	var tStr = string(global.Time/1000) + " km"
-	draw_text(420,20,tStr);
+	var tStr = string(global.Time) + " km"
+	draw_text(480,20,tStr);
 }
 
 #endregion

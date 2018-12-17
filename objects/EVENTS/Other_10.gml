@@ -43,3 +43,5 @@ switch (other.uiControlName) {
 	create_dialogue(["That's when they started the investigation."], [ai_obj]);
 	break;
 }
+
+obj_textbox.deleteType = "Soft";

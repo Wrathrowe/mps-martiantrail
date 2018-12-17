@@ -7,3 +7,4 @@ event_inherited();
 if (inv_check_supplies_ready()) {
 	objective_remove(shopkeep_obj);
 }
+

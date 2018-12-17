@@ -14,7 +14,6 @@ y = cam_y;
 x = cam_x+40+ease_out_back(lb_easing[? "time"],lb_easing[? "start"],lb_easing[? "dest"]-lb_easing[? "start"],lb_easing[? "duration"]);
 
 
-
 #region Leftbox Easing
 if (lb_easing[? "time"] < lb_easing[? "duration"]) {
 	lb_easing[? "time"]++;

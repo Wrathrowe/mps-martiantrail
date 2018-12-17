@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (live_call()) return live_result;
+
 // Inherit the parent event
 event_inherited();
 
@@ -46,4 +48,37 @@ if (keyboard_check_pressed(vk_right) || keyboard_check_pressed(vk_rshift))
 else if (keyboard_check_pressed(vk_left)|| keyboard_check_pressed(vk_lshift)) 
 && crewMenu.itemindex > 0 {
 	crewMenu.itemindex--;
+}
+
+
+var pecLabels = ["P","E","C"];
+var brk = false;
+
+for (var i = 0; i<array_length_1d(pecLabels); i++) {
+	
+	if keyboard_check_pressed(ord(pecLabels[i])) or keyboard_check_pressed(ord(string(i+1))) {
+		
+		
+		
+		for (var j = 0; j<instance_number(ui_c_add_crew); j++) {
+			var btn = instance_find(ui_c_add_crew, j) {
+				
+				if points == 0 {
+					crewSelected.pecProf[? pecLabels[i]] = 0;
+				}
+				
+				if btn.uiValue == crewSelected.pecProf[? pecLabels[i]] + 1 and btn.uiButtonGroup == i+1 and !brk{
+					with (btn) {
+						with (crewGen_menu_obj) {
+							event_perform(ev_other, ev_user0);
+						}
+					}
+					brk = true;
+					
+					show_debug_message("uiValue: "+string(btn.uiValue) + " pecProf "+pecLabels[i]+": "+string(crewSelected.pecProf[? pecLabels[i]]));
+					
+				}
+			}
+		}
+	}
 }

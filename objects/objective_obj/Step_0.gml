@@ -6,7 +6,7 @@ if (!instance_exists(player_obj) || !instance_exists(objective)) {
 }
 
 x = player_obj.x;
-y = player_obj.y;
+y = player_obj.y-player_obj.sprite_height/2;
 
 image_alpha = (distance_to_object(objective)-100)/100;
 image_angle = point_direction(x, y, objective.x, objective.y);

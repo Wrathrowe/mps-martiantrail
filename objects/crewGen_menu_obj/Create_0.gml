@@ -4,8 +4,10 @@
 // Inherit the parent event
 event_inherited();
 
+if (live_call()) return live_result;
+
 //Panel Properties
-mySprite = ctb_load_subimage(spr_textbox_slice9_subimages, 800, 400 );
+mySprite = ctb_load_subimage(spr_textbox_slice9_subimages, 768, 400 );
 sprite_set_offset(mySprite,sprite_get_width(mySprite)/2,sprite_get_height(mySprite)/1.5);
 
 //Global Widget Vars

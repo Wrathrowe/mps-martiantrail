@@ -12,4 +12,7 @@ myPortraitTalk = ai_talk_spr;
 myVoice = snd_voice2;
 myFont = fnt_dialogue;
 myName = "AI";
+
+detection_radius = 2*sprite_width;
+
 //type = "Human";
