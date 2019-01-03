@@ -13,3 +13,6 @@ myPortrait = spr_char;
 myPortraitIdle = spr_char;
 myPortraitTalk = spr_char_talking;
 detection_radius = 96;
+
+//pal swapper
+myColorNumber = 0;

@@ -18,7 +18,7 @@ draw_self();
 //set to m_text
 var txt = m_text;
 //or to keyboard if editing
-draw_set_font(fnt_dialogue);
+draw_set_font(fnt_dialogue_small);
 
 if(m_editing) {
 	

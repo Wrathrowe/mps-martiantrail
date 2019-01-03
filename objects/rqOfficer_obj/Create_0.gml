@@ -22,3 +22,5 @@ tabObj = objective_create(rqOfficer_obj, "Press [TAB] to open your current objec
 
 
 alarm[0] = 99;
+
+myColorNumber = 4;

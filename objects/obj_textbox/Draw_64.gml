@@ -40,7 +40,8 @@ if(cname != "None"){
 	c = name_col;
 	draw_set_halign(fa_center);
 	draw_set_font(name_font);
-	draw_text_color(name_box_text_x, name_box_text_y, cname, c,c,c,c, 1);
+	draw_text_color(name_box_text_x+2, name_box_text_y+6, cname, c_white,c_white,c_white,c_white, .33);
+	draw_text_color(name_box_text_x, name_box_text_y+4, cname, c,c,c,c, 1);
 	draw_set_halign(fa_left);
 }
 #endregion
@@ -56,7 +57,9 @@ if(type[page] == 1){
 	var cc = 1, yy = pos_y+y_buffer, xx = pos_x+x_buffer, ii = 0, iy = 0;
 	
 	//Loop through our choices, draw them, highlight the one we are selecting
+	var total = 0;
 	repeat(tpl){
+		total++;
 		if(choice == ii){ 
 			if(chosen) { col = select_col; }
 			else	   { col = choice_col; }
@@ -64,7 +67,9 @@ if(type[page] == 1){
 		
 		//Draw our choices
 		var ctext = "* "+tp[ii];
-		draw_text_ext_color(xx, yy+((ii+iy)*stringHeight), ctext, stringHeight, txtwidth, col, col, col, col, 1); 
+		var xpad = total > 4 ? 600 : 0;
+		var ypad = total > 4 ? (ii+iy-4)*stringHeight : (ii+iy)*stringHeight;
+		draw_text_ext_color(xx+xpad, yy+(ypad), ctext, stringHeight, txtwidth, col, col, col, col, 1); 
 		
 		if(string_width(ctext) > txtwidth) { iy++; }
 		ii++; 
@@ -230,7 +235,7 @@ else {
 				
 			case 6: //pulse
 				var so = t + cc;
-				var shift = abs(sin(so*pi*freq/room_speed));
+				var shift = abs(sin(so*pi*freq/room_speed/4));
 				var mv = charSize/2;
 				draw_set_valign(fa_middle); draw_set_halign(fa_middle);
 				draw_text_transformed_color(xx + (cx*charSize)+mv, yy+(cy*stringHeight)+(stringHeight/2), letter, shift, shift, 0, col, col, col, col, 1);
@@ -239,7 +244,7 @@ else {
 				
 			case 7:	//flicker
 				var so = t + cc;
-				var shift = sin(so*pi*freq/room_speed);
+				var shift = sin(so*pi*freq/room_speed/4);
 				draw_text_color(xx + (cx*charSize), yy+(cy*stringHeight), letter, col, col, col, col, shift+random_range(-1,1));
 				break; 
 		}

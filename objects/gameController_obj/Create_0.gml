@@ -13,3 +13,6 @@ EVENT_TRIGGER = irandom_range(60*2, 60*5);
 //local
 objAlpha = 0;
 t = 0;
+
+//Pallet Swap
+pal_swap_init_system(shd_pal_swapper);

@@ -6,10 +6,10 @@ event_inherited();
 if (!first) {
 	//Greeting
 	myText[0] = "How may I assist you?";
+	//myEffects[0] = [1,7];
 } else {
 	first = false;
-	myText[0] = "Welcome, Captain. I'm the Arcadia Corp. Requisitions Officer. We've recieved a distress signal from the Martian colony. Arcadia High Command has tasked me with assisting you in preparing for the journey. While exactly how you prepare is up to you, I'd be happy to assist the process however I can."
-	
+	myText[0] = "Welcome, Captain. I'm the Arcadia Corp. Requisitions Officer. We've recieved a distress signal from the Martian colony."
 	objective_remove(self);
 	objective_create(shopkeep_obj, "Get PEC Components and Medical Supplies", c_yellow);
 	objective_create(academyOfficer_obj, "Visit the Academy Officer and assemble your crew", c_aqua);
@@ -23,15 +23,15 @@ if (!first) {
 	myNextLine[2] = [3,4,5,6];
 
 	//Crew
-	myText[3] = "I'd recommend visiting the Academy to find crew interested in the mission. It can be found south-east of here.";
+	myText[3] = "I'd recommend visiting the Academy to find crew interested in the mission. It can be found on the floor above us to the right.";
 	myNextLine[3] = 2;
 
 	//Ship
-	myText[4] = "Your ship can be found in the shipyard. We've taken the liberty of preparing it for you. Once you have supplies and a crew, you'll be cleared for launch.";
+	myText[4] = "Your ship can be found on the top floor. Once you have supplies and a crew, you'll be cleared for launch.";
 	myNextLine[4] = 2;
 
 	//Supplies
-	myText[5] = "Supplies can be requisitioned here. You can find Medical Supplies behind me, and PEC Components on the floor above with the Shopkeep. If you have questions about PEC Components, he can answer them for you.";
+	myText[5] = "Supplies can be requisitioned on the floor above us to the left. If you're unsure what to get, I suggest asking shopkeep about packages.";
 	myNextLine[5] = 2;
 
 	//Nevermind

@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-draw_sprite(mySprite,0,x,y);
+//draw_sprite(mySprite,0,x,y);
 draw_set_color(c_white);
 
 var crew = CREW[crewMenu.itemindex];

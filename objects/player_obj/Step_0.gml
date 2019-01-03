@@ -13,6 +13,10 @@ if(!instance_exists(obj_textbox)) {
 	
 	player_set_dir(8);
 
+	if hspeed != 0 and vspeed == 0 {
+		image_xscale = sign(hspeed);
+	}
+
 	if zoom < 1 {
 		zoom += .02;
 	}
