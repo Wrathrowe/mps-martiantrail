@@ -17,22 +17,31 @@ if(!instance_exists(obj_textbox)) {
 		image_xscale = sign(hspeed);
 	}
 
-	if zoom < 1 {
+	zoom = lerp(zoom, 1, 0.1);
+
+	//if(zoom == 2)
+	//zoom--;
+
+	/*if zoom < 1 {
 		zoom += .02;
-	}
+	}*/
 }
 
 else {
 	speed = 0;
 	collider = noone;
-	if zoom > .5 {
+	
+	zoom = lerp(zoom, 1.5, 0.1);
+	
+	
+	/*if zoom > .5 {
 		zoom -= .02;
-	}
+	}*/
 }
 
-zoom = clamp(zoom, .5, 1);
+//zoom = clamp(zoom, .5, 1);
 
 //debugging
-zoom = 1;
+//zoom = 1;
 
-camera_set_view_size(view_camera[0], (view_wport[0]*.75)*zoom, (view_hport[0]*.75)*zoom);
+camera_set_view_size(view_camera[0], (view_wport[0]*.75)/zoom, (view_hport[0]*.75)/zoom);
